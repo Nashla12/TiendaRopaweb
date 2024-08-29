@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 56px;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    color: #e74c3c; 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+h4 {
+    color: #3498db; 
+    font-size: 1.75rem;
+    margin-bottom: 0.8rem;
+}
+
+h5 {
+    color: #2ecc71;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+h6 {
+    color: #f39c12; 
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+h3:hover, h4:hover, h5:hover, h6:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ff4081;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.hero {
+    background: none;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.btn-primary {
+    background-color: #ff4081;
+    border-color: #ff4081;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    background-color: #e91e63;
+    border-color: #e91e63;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: #ff4081;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Asegura que el contenido se distribuya uniformemente */
+    height: 100%; /* Hace que todas las tarjetas tengan la misma altura */
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product-card img {
+    height: 450px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción al ajustarse al contenedor */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    border-radius: 15px 15px 0 0;
+}
+
+.product-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* Hace que el cuerpo de la tarjeta ocupe todo el espacio restante */
+}
+
+.product-card .price {
+    margin-top: auto; /* Mueve el precio y el botón hacia la parte inferior de la tarjeta */
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card .card-title {
+    font-size: 1.25rem;
+    color: #34495e;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+#contacto h2 {
+    color: #16a085;
+}
+
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #ff4081;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #e91e63;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    font-size: 0.9rem;
+}
+
+footer .fa-heart {
+    color: #ff4081;
+}
+
+/* Animación fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+
+.navbar {
+    background-color: #f8f9fa; /* Cambia este color para personalizar el fondo del menú */
+    padding: 1rem;
+}
+
+
+.navbar-nav .nav-link {
+    color: #2c3e50; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ff4081; 
+}
+
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #ff4081;
+    font-size: 1.5rem;
+}
+
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 64, 129, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+ 
+/* Estilos para la sección Nosotros */
+#nosotros {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    border-top: 2px solid #ddd;
+}
+
+#nosotros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #007bff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#nosotros h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+
+}
+
+#nosotros p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+#nosotros ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#nosotros ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    position: relative;
+    padding-left: 20px;
+}
+
+#nosotros ul li:before {
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#nosotros .row {
+    margin-bottom: 30px;
+}
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda360 - Tu estilo, tu mundo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-tshirt"></i> Moda360</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="inicio" class="hero">
+        <div class="hero-content text-center">
+            <h1>Bienvenido a Moda360</h1>
+            <p>Descubre tu estilo, vive tu mundo</p>
+            <a href="#productos" class="btn btn-primary btn-lg">Explora ahora</a>
+        </div>
+    </header>
+
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nosotros</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Misión</h4>
+                    <p>Nuestra misión es ofrecer moda accesible y de alta calidad que permita a nuestros clientes expresar su estilo personal con confianza.</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Visión</h4>
+                    <p>Ser la tienda de moda preferida a nivel mundial, reconocida por nuestra innovación, calidad y compromiso con la sostenibilidad.</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Valores</h4>
+                    <ul>
+                        <li>Calidad</li>
+                        <li>Innovación</li>
+                        <li>Sostenibilidad</li>
+                        <li>Atención al cliente</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4>Nuestra Historia</h4>
+                    <p>Moda360 comenzó como una pequeña boutique y ha crecido hasta convertirse en una marca internacional, manteniendo siempre la pasión por la moda y el compromiso con nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section id="productos" class="my-5">
+            <h2 class="text-center mb-4">Nuestros Productos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="IMG/imagencamiseta.jpeg" class="card-img-top" alt="Camiseta Casual">
+                        <div class="card-body">
+                            <h5 class="card-title">Camiseta Casual</h5>
+                            <p class="card-text">Una cómoda camiseta para el día a día.</p>
+                            <p class="price">$29.99</p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="IMG/jeanclasicos.jpg" class="card-img-top" alt="Jeans Clásicos">
+                        <div class="card-body">
+                            <h5 class="card-title">Jeans Clásicos</h5>
+                            <p class="card-text">Jeans versátiles para cualquier ocasión.</p>
+                            <p class="price">$59.99</p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card product-card">
+                        <img src="IMG/vestidoe.png" class="card-img-top" alt="Vestido Elegante">
+                        <div class="card-body">
+                            <h5 class="card-title">Vestido Elegante</h5>
+                            <p class="card-text">El vestido perfecto para eventos especiales.</p>
+                            <p class="price">$89.99</p>
+                            <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contacto" class="my-5">
+            <h2 class="text-center mb-4">Contáctanos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Información de Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Calle Las Damas. 1.118, Malecon Santo Domingo</p>
+                    <p><i class="fas fa-phone"></i> +1 809 567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@moda360.com</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <div class="container">
+            <p>&copy; 2024 Moda360. Todos los derechos reservados.</p>
+            <p>Diseñado con <i class="fas fa-heart"></i> por el equipo de Moda360</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+   
